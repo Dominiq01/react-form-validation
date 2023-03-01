@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  font-size: 1.6rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.212);
+  animation: onShow 1s ease;
+}
+
+.description {
+  padding: 4rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: #495057;
+}
+
+.name,
+.email,
+.country,
+.terms {
+  margin-top: 2rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  display: block;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 50%;
+  font-size: 1.4rem;
+  padding: 0.8rem 0.6rem;
+  color: #495057;
+  border: 2px solid #868e96;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline-color: #37b24d;
+}
+
+.checkbox {
+  margin-top: 0.4rem;
+  height: 1.6rem;
+  width: 2rem;
+  accent-color: #37b24d;
+  cursor: pointer;
+}
+
+.checkbox:focus {
+  outline-color: #37b24d;
+}
+
+.checkbox.invalid:focus {
+  outline-color: #fa5252;
+}
+
+.flex-terms {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+
+.invalid-terms {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: .5rem;
+  color: #fa5252;
+}
+
+.terms-text {
+  font-size: 1.4rem;
+  color: #495057;
+}
+
+.input.invalid {
+  border-color: #fa5252;
+}
+
+.input.invalid:focus {
+  outline-color: #fa5252;
+}
+
+.button {
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.6rem 2rem;
+  margin: 3rem 0 1rem 0;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #2b8a3e;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button:active {
+  background-color: #37b24d;
+}
+
+.img {
+  background-image: url("../img/panda.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+@keyframes onShow{
+  from {
+    transform: translateY(-3rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    flex-direction: column;
+  }
+  .img {
+    height: 20rem;
+    background-image: url("../img/panda-small.jpg");
+  }
+}
